@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+.container{
+    background-image: url(photo-1513151233558-d860c5398176.jpg);
+    margin: 10px 80px 30px 80px;
+    padding-bottom: 30px;
+    background-color: crimson;
+    border-radius: 10px;
+    min-height: 75vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.header{
+    background: white;
+    border: 1px solid white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+ul{
+    list-style-type: none; 
+    text-align: justify; 
+    justify-content: end;
+    
+}
+
+li a{
+margin: auto;
+text-decoration: none;
+text-transform: capitalize;
+margin: auto;
+color: black;
+font-size: larger;
+padding: 0px 10px;
+
+}
+
+
+
+ul li{
+    display: inline-block;
+    margin: 15px;
+}
+a.sign{
+    background-color: rgb(59, 238, 238);
+    width: 120px;
+    height: 50px;
+    color: white;
+    border-radius:4px ;
+    font-size: larger;
+    border: 1px solid rgb(59, 238, 238);
+    border-width: 15px;
+    margin-bottom: 5px;
+}
+h1{
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 80px 0px 40px 30px;
+    line-height: 60px;
+}
+.box{
+    display: flex;
+    margin: 30px 20px;
+}
+input[type=text]{
+    width: 50%;
+    height: 55px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+input[type=date]{
+    width: 30%;
+    height: 57px;
+    border: none;
+    
+}
+.last{
+    background-color: orange;
+    color: white;
+    width: 20%;
+    height: 57px;
+    border-radius: 0px 10px 10px 0px;
+    border: none
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:white ;
+    margin: 30px 20px;
+    margin-top: 90px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+@media(max-width: 700px){
+    
+    input[type=text]{
+        height: 56px;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        border-radius: 10px;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0 5px;
+        font-size: 1.3rem;
+    }
+    ul li{
+        margin: 0px 5px;
+    }
+    li{
+        padding-bottom: 10px;
+    }
+    
+    li a{
+        padding: 0px 5px;
+        margin: 5px;
+    }
+    .container{
+        width: 95%;
+    }
+}
+
